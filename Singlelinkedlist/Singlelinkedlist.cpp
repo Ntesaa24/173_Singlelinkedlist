@@ -33,7 +33,7 @@ void addNode() {
 	}
 
 	Node* previous = START;
-	START = nodeBaru;
-	return;
+	Node* current = START; 
 }
+
 
