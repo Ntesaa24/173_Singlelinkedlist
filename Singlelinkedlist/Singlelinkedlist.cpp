@@ -108,12 +108,25 @@ void traverse() {
 
 void seacrhData() {
 	if (listEmpty()) {
-		cout << "LIst Kosong" << endl; 
-		system("pause"); 
-		system("cls"); 
-		return; 
+		cout << "LIst Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
 	}
 	else {
-
+		int nim;
+		cout << "List Kosong" << endl;
+		cin >> nim;
+		Node* currentNode = START;
+		while (currentNode != NULL) {
+			if (currentNode->noMhs == nim) {
+				cout << "NIM: " << currentNode->noMhs << ", Nama:" << currentNode->name << endl;
+				return;
+			}
+			currentNode = currentNode->next;
+		}
+		cout << "Data tidak ditemukan" << endl;
 	}
 }
+
+int
