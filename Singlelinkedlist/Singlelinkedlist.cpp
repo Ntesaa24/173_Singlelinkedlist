@@ -106,3 +106,14 @@ void traverse() {
 	}
 }
 
+void seacrhData() {
+	if (listEmpty()) {
+		cout << "LIst Kosong" << endl; 
+		system("pause"); 
+		system("cls"); 
+		return; 
+	}
+	else {
+
+	}
+}
